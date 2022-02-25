@@ -1,0 +1,72 @@
+Linux Bash
+The Linux Bash is also known as 'Bourne-again Shell.' It is a command language interpreter for the Linux based system. It is a replacement of Bourne shell (sh). It was developed under the GNU Project and written by Brian Fox. Nowadays, Bash is the default user shell of most of the Linux distributions.
+
+The Linux/Unix shell allows us to interact with the Linux system through the commands. It let us invoke an executable file to create a running process. Moreover, it also allows us to interact with the Linux file system. It is designed in such a way that we can perform all the Linux operations through Bash.
+
+The Bash is a command language interpreter as well as a programming language. It supports variables, functions, and flow control, like other programming languages. It can also read and execute the commands from a file, which is called a shell script.
+
+
+
+It offers various functional improvements over Bourne Shell (sh) for both interactive and programming use. Although many sh scripts can be run by Bash without any change. The Bash contains the following improvements over sh:
+
+It provides command-line editing
+It contains unlimited size command history
+It provides Job Control
+It facilitates with Shell Functions and Aliases
+It provides the indexed arrays of unlimited size
+It contains integer arithmetic in any base from 2 to 64.
+How to download Bash
+
+It can be downloaded from the official GNU server via both HTTP (http://ftp.gnu.org/gnu/bash/) and FTP (ftp://ftp.gnu.org/gnu/bash/ ) servers.
+
+People often get confused between bash, shell, and shell script. Let's walk through shell and scripting to clear a picture of bash, shell, and scripting.
+
+What is Shell
+If we are a new Linux user, and we open the terminal, it is assumed that we are well confused as to what to do with it. Here the Shell comes in the role.
+
+The terminal contains the shell; it allows us to execute the commands to interact with the system. We can perform various operations such as store and retrieve data, process information, and various other simple as well as complex tasks.
+
+To open the terminal, press CTRL+ALT+T keys. Perform some basic operations such as date, cal, ls, and pwd to take a tour with it.
+
+Consider the below image:
+
+Linux Bash
+As we can see from the above image, the shell allows us to interact with the Linux system. When we have executed the date and cal command, the shell interacts with the system and retrieves data.
+
+What is Scripting
+
+Suppose we are required to execute some basic commands every day, for example above four commands. Linux supports a feature called scripting that allows us to execute more than one task at once. So, it is good to define a script rather than performing repetitive tasks.
+
+To understand how to use Linux script, let's define a script in a combination of some tasks. To define a script, create a file with a .sh extension. We are using the VI text editor. However, any text editor can be used to define a script. Consider below command:
+
+vi tasks.sh  
+The above command will open the vi editor in normal mode. Switch it to insert mode by pressing ESC, and after that enter 'i' keys, enter your desired tasks. Every task should be defined in a new line. Consider the below tasks:
+
+date  
+cal  
+pwd  
+ls  
+After entering the tasks, press ESC and :wq! Keys to save and exit from the editor.
+
+Now, make the created file as executable, use the chmod command with +x option as follows:
+
+chmod +x tasks.sh  
+We have created our first script. To execute the shell script, execute the file name by predefining './ ' with the file name. Consider the below command:
+
+./task.sh  
+Consider the below output:
+
+Linux Bash
+As we can see from the above output, by using the shell, we can automate the tasks. We can use this whenever we need it. It can be used repeatedly any number of times.
+
+Features of Bash
+All the built-in command of the sh shell is available in Bash; moreover, it facilitates us with many other features. Some key features of Bash are as follows:
+
+Shell Syntax: The shell syntax contains shell operations, quoting, and comments. The shell operations are the basic operation of the shell. Quoting allows how to remove the special meaning from characters, and comments are meant to specify the comments.
+Shell commands: Shell commands are the types of commands that you can execute. These commands can be simple commands, pipelines, lists, compound commands, and more.
+Shell Functions: Shell functions are used to group commands by name. They are executed as traditional commands. When we use the name of a shell function, the list of commands associated with that is executed.
+Shell parameters: Basically, a parameter is an entity that stores value; it can be a name, number, or special character. The shell parameters specify how the shell store value. They can be a positional parameter or a special parameter. Positional parameters are the shell's command-line arguments, and the special parameters are denoted by a special character.
+Shell Expansions: Shell expansion is a technique that is used by Bash to expand the parameters. Expansion is performed on the command line after the input has been splitted into tokens.
+Redirections: It is a way to manage and control the input and output.
+Command execution: It decides how the system will react when we execute a command.
+Shell Scripts: It is a text file that has shell commands and executes them when it is used. Bash reads and executes the commands then exits.

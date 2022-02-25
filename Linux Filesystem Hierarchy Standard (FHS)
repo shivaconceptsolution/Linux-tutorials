@@ -1,0 +1,29 @@
+Linux Filesystem Hierarchy Standard (FHS)
+Filesystem hierarchy standard describes directory structure and its content in Unix and Unix like operating system. It explains where files and directories should be located and what it should contain.
+
+Its current version is 3.0 released on June 3rd 2015 and is maintained by Free Standards Group. In Unix like operating system everything is considered as a file.
+
+Only Linux distributions follow the FHS and that too partially. Because every distro have their own policy due to which you may notice some differences in the directory tree structure of different distros.
+
+
+
+If you want to find out information about your system's FHS, enter the command man hier. It will display directory structure of your system.
+
+Note: GoboLinux and NixOS doesn't follow FHS at all, it has its own and completely different policy.
+The Root Directory
+All the directories in the Linux system comes under the root directory which is represented by a forward slash (/). Everything in your system can be found under this root directory even if they are stored in different virtual or physical devices.
+
+Linux FHS The Root directory
+Look at the above snapshot, we have shown you the root directory of our system i.e; Ubuntu with the help of the command "ls /". Here, we have written (/) to represent root directory.
+
+Linux Directories
+We have categorize the directories according to the type of file as given below:
+
+Directory type	Types of files stored
+Binary directories	Contains binary or compiled source code files, eg, /bin, /sbin, etc.
+Configuration directories	Contains configuration files of the system, eg, /etc, /boot.
+Data directories	Stores data files, eg, /home, /root, etc.
+Memory directories	Stores device files which doesn't take up actual hard disk space, eg, /dev, /proc, /sys.
+Usr (Unix System Resources)	Contains sharable, read only data, eg, /usr/bin, /usr/lib, etc.
+var (variable directory)	Contains larger size data, eg, /var/log, /var/cache, etc.
+Non-standard directories	Directories which do not come under standard FHS, eg, lost+found, /run, etc.
