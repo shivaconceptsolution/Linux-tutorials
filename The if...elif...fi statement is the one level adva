@@ -1,0 +1,77 @@
+The if...elif...fi statement is the one level advance form of control statement that allows Shell to make correct decision out of several conditions.
+
+Syntax
+
+if [ expression 1 ]
+then
+   Statement(s) to be executed if expression 1 is true
+elif [ expression 2 ]
+then
+   Statement(s) to be executed if expression 2 is true
+elif [ expression 3 ]
+then
+   Statement(s) to be executed if expression 3 is true
+else
+   Statement(s) to be executed if no expression is true
+fi
+This code is just a series of if statements, where each if is part of the else clause of the previous statement. Here statement(s) are executed based on the true condition, if none of the condition is true then else block is executed.
+
+Example
+Live Demo
+#!/bin/sh
+
+a=10
+b=20
+
+if [ $a == $b ]
+then
+   echo "a is equal to b"
+elif [ $a -gt $b ]
+then
+   echo "a is greater than b"
+elif [ $a -lt $b ]
+then
+   echo "a is less than b"
+else
+   echo "None of the condition met"
+fi
+Upon execution, you will receive the following result −
+
+n this chapter, we will understand shell decision-making in Unix. While writing a shell script, there may be a situation when you need to adopt one path out of the given two paths. So you need to make use of conditional statements that allow your program to make correct decisions and perform the right actions.
+
+Unix Shell supports conditional statements which are used to perform different actions based on different conditions. We will now understand two decision-making statements here −
+
+The if...else statement
+
+The case...esac statement
+
+The if...else statements
+If else statements are useful decision-making statements which can be used to select an option from a given set of options.
+
+Unix Shell supports following forms of if…else statement −
+
+if...fi statement
+if...else...fi statement
+if...elif...else...fi statement
+Most of the if statements check relations using relational operators discussed in the previous chapter.
+
+The case...esac Statement
+You can use multiple if...elif statements to perform a multiway branch. However, this is not always the best solution, especially when all of the branches depend on the value of a single variable.
+
+Unix Shell supports case...esac statement which handles exactly this situation, and it does so more efficiently than repeated if...elif statements.
+
+There is only one form of case...esac statement which has been described in detail here −
+
+case...esac statement
+The case...esac statement in the Unix shell is very similar to the switch...case statement we have in other programming languages like C or C++ and PERL, etc.
+
+var="data"
+
+case "$var" in
+   "value") echo "statement" 
+   ;;
+   "value") echo "statement"
+   ;;
+   *) echo "statement" 
+   ;;
+esac

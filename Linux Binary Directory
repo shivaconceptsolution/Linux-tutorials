@@ -1,0 +1,45 @@
+
+Linux Binary Directory
+Binary files are the files which contain compiled source code (or machine code). They are also called executable files because they can be executed on the computer.
+
+Binary directory contains following directories:
+
+/bin
+/sbin
+/lib
+/opt
+/bin
+The '/bin' directory contains user binaries, executable files, Linux commands that are used in single user mode, and common commands that are used by all the users, like cat, cp, cd, ls, etc.
+
+
+The '/bin' directory doesn't contain directories.
+
+Example:
+
+ls /bin  
+Linux Binary Directories1 
+Look at the above snapshot, command "ls /bin" displays the list of '/bin' directory. Commands like cp, cat, less, touch, etc can be seen in the snapshot.
+
+/sbin
+
+The '/sbin' directory also contains executable files, but unlike '/bin' it only contains system binaries which require root privilege to perform certain tasks and are helpful for system maintenance purpose. e.g. fsck, root, init, ifconfig, etc.
+
+Example:
+
+ls /sbin  
+Linux Binary Directories2 
+Look at the above snapshot, command "ls /sbin" displays the list of '/sbin' directory.
+
+/lib
+The '/lib' directory contains shared libraries which are often used by the '/bin' and '/sbin' directories. It also contains kernel module. These filenames are identable as ld* or lib*.so.*. For example, ld-linux.so.2 and libfuse.so.2.8.6
+
+Example:
+
+ls /lib  
+Linux Binary Directories3 
+Look at the above snapshot, command "ls /lib" displays the list of '/lib' directory.
+
+/lib/modules: The '/lib/modules' stores kernel modules and has a directory for each installed kernel.Modules are meant to use extra hardware support without making a new kernel.
+/lib32 and /lib64: During compilation time of libraries you'll encounter through the directories named '/lib32' and '/lib64' which will clarify register size to be used. A 64-bit system may have compatibility for 32-bit binary.
+/opt
+The term 'opt' is short for optional. Its main purpose is to store optional application software packages. Add-on applications from individual vendors should be installed in '/opt'. And so in some systems '/opt' is empty as they may not have any add-on application.

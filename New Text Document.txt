@@ -1,4 +1,4 @@
-Linux Basic Commands
+﻿Linux Basic Commands
 Before we go on to the list of commands, you need to open the command line first. If you are still unsure about the command-line interface, check out this CLI tutorial.
 
 Although the steps may differ depending on the distribution that you’re using, you can usually find the command line in the Utilities section.
@@ -32,14 +32,18 @@ There are variations you can use with the ls command:
 ls -R will list all the files in the sub-directories as well
 ls -a will show the hidden files
 ls -al will list the files and directories with detailed information like the permissions, size, owner, etc.
+
 4. cat command
+
 cat (short for concatenate) is one of the most frequently used commands in Linux. It is used to list the contents of a file on the standard output (sdout). To run this command, type cat followed by the file’s name and its extension. For instance: cat file.txt.
 
 Here are other ways to use the cat command:
 
 cat > filename creates a new file
-cat filename1 filename2>filename3 joins two files (1 and 2) and stores the output of them in a new file (3)
+cat filename1 filename2>	
+joins two files (1 and 2) and stores the output of them in a new file (3)
 to convert a file to upper or lower case use, cat filename | tr a-z A-Z >output.txt
+
 5. cp command
 Use the cp command to copy files from the current directory to a different directory. For instance, the command cp scenery.jpg /home/username/Pictures would create a copy of scenery.jpg (from your current directory) into the Pictures directory.
 
@@ -82,7 +86,9 @@ Other variations when using the find are:
 
 To find files in the current directory use, find . -name notes.txt
 To look for directories use, / -type d -name notes. txt
+
 13. grep command
+
 Another basic Linux command that is undoubtedly helpful for everyday use is grep. It lets you search through all the text in a given file.
 
 To illustrate, grep blue notepad.txt will search for the word blue in the notepad file. Lines that contain the searched word will be displayed fully.
